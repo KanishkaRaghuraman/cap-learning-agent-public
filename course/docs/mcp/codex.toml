@@ -1,0 +1,17 @@
+# Project-scoped Codex MCP configuration. Merge with existing settings.
+# Source: https://learn.chatgpt.com/docs/extend/mcp?surface=cli
+
+[mcp_servers."cds-mcp"]
+command = "npx"
+args = ["-y", "@cap-js/mcp-server@0.0.6"]
+startup_timeout_sec = 60
+
+[mcp_servers."fiori-mcp"]
+command = "npx"
+args = ["-y", "@sap-ux/fiori-mcp-server@1.13.0", "fiori-mcp"]
+startup_timeout_sec = 60
+
+[mcp_servers."ui5-mcp"]
+command = "npx"
+args = ["-y", "@ui5/mcp-server@0.3.0"]
+startup_timeout_sec = 60

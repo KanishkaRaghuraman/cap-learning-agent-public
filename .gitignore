@@ -1,0 +1,62 @@
+# Generated learner app and private session state
+/IncidentManagement/
+memory-bank/progress.md
+memory-bank/activeContext.md
+# Dependencies, output and local databases
+node_modules/
+# CAP tooling cache (created by real documentation searches)
+.cds/
+gen/
+dist/
+target/
+*.db
+*.db-*
+*.sqlite*
+*.log
+# Credentials and local client configuration
+.env*
+!.env.example
+default-env.json
+*.pem
+*.key
+*.p12
+*.pfx
+.mcp.json
+.cursor/mcp.json
+.vscode/mcp.json
+.codex/config.toml
+.claude/settings.local.json
+# Editor/system files
+.DS_Store
+Thumbs.db
+.idea/
+*.tmp
+*.swp
+
+# Optional isolated npm tool prefix
+.course-tools/
+
+# Generated setup suggestions contain local absolute paths
+*.suggested
+
+# Local builder evidence (never publish learner data)
+memory-bank/receipts/
+memory-bank/preparation.json
+memory-bank/preparation.json.*
+memory-bank/preparation-evidence-*/
+
+# Local migration backups can contain learner evidence
+memory-bank/migrations/
+memory-bank/.migration.lock/
+memory-bank/migration-incomplete.json
+
+# Learner feedback and transcripts are private working files
+/transcript*.md
+/trasncript*.md
+/session-transcript*.md
+/feedback.md
+.claude/
+
+# Downloaded SAP API contracts stay local
+*.edmx
+**/srv/external/

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "files": {
+    ".gitignore": "5502d510b76f156f71e9ef447dfab582f86046fa30df4ee2bc6ba43cf9abf8a6",
+    "app/incidents/annotations.cds": "78d3b3e03df946b24f181ca99f9dae5666184435799999dbf954d86bca5bba9b",
+    "app/incidents/package.json": "ce47e09708fda1056d2de42a24a8e37a1811bd0f7cd310c1e2043cf7dcd6126c",
+    "app/incidents/ui5.yaml": "5101725b2717dc75c5ca8b45fe0e963ce089d563cbb0967e561712a03006ff54",
+    "app/incidents/webapp/Component.js": "7a22d39ec4c5194c738ac7db9eb5d75f6bf2db7f3797ec75e1266681eed2f6f6",
+    "app/incidents/webapp/i18n/i18n.properties": "e6df924ffd2907a7d14b9716dd2decbbc2d04e3ed11f231242ac39a0db40941a",
+    "app/incidents/webapp/i18n/i18n_en.properties": "2e2ffb01c868220327c9a2e02b52efd0ad86658453cb92285b9eeafb7f342e2b",
+    "app/incidents/webapp/index.html": "ccf87c065be587dd3fc1dac8851b6eaeae1d1e5ac02b35377f16becfae6b44eb",
+    "app/incidents/webapp/manifest.json": "4f60f9fd0f4747119a51cebfb8c2de1fa80b5c03897b4dab5b842e14bf3a91a1",
+    "app/services.cds": "2283ae7895ad613c491aa31d5cfb491ba6062f01b956adb5a33579b186e8cae3",
+    "db/schema.cds": "e5a83364e30da927c616a69243877610ade0c009d5e0e1b660c792c8b687c188",
+    "package-lock.json": "067faa652c27d5162379626c267ef73f02053c6bfdcc693867a908c256e2e712",
+    "package.json": "1445101d9046b9368e4ad93829e1db97287b67a89ae1e64311c337fb69a15f16",
+    "srv/incidents-service.cds": "d34adf85470650f5278b0810a4bff96dc435174052399d436cc48afc82dfe282",
+    "srv/incidents-service.js": "5f4a66ecd9e9d2924be1757e2a2c5bf704da0d99957e1092041a4d28521e40a0",
+    "test/data/incident.mgmt-BusinessPartners.csv": "d112fc94ad01169c2eff9e066acda0f41f2afb9c0dd2769953592355d7528633",
+    "test/data/incident.mgmt-ConversationMessages.csv": "533bbda04c26b82fa8af0eb35f24feb34557a77e180e07f37ed260724c0f1f86",
+    "test/data/incident.mgmt-Incidents.csv": "182f4c5e505cca01dd7a5b83e6b82e8c9d3418bf447604bc921481767803ddb0"
+  }
+}

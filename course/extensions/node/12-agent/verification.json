@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-30",
+  "runtime": "Node.js",
+  "versions": {
+    "node": "24.19.0",
+    "cds": "10.1.1",
+    "agents": "0.9.7",
+    "mcp": "1.5.0"
+  },
+  "tests": {
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  },
+  "modelProvider": "llm-mock",
+  "liveModelVerified": false,
+  "modelAccessVerified": false,
+  "effectiveTools": [
+    "describe",
+    "query"
+  ],
+  "authorizationNegativeCases": [
+    "anonymous A2A HTTP401",
+    "mallory A2A HTTP403"
+  ],
+  "roleCases": [
+    "IncidentReader",
+    "IncidentReader+IncidentManager"
+  ],
+  "readonlyCases": [
+    "UPDATE denied",
+    "DELETE query denied",
+    "createdBy excluded",
+    "BusinessPartners excluded",
+    "nonexistent record empty",
+    "synthetic incident rows unchanged"
+  ],
+  "syntheticIncidentCount": 6,
+  "originalServiceChecks": [
+    "MCP action tool retained",
+    "OData metadata delivered"
+  ],
+  "previewPathObserved": "/a2a/incident-assistant/preview",
+  "previewHtmlDelivered": true,
+  "browserRenderingVerified": false,
+  "sourceRuntimeOnlySettings": [
+    "@agent.connect: none",
+    "llm-mock",
+    "internal buildTools event"
+  ],
+  "searchModelLimitation": "candidate outside configured workspace roots",
+  "filesystemSafety": "Reject package/service/assistant symlinks before writes; external sentinels unchanged",
+  "authorizationEvidenceRegression": "HTTP500/404, JSON-RPC unknown method or code401, generic errors and mismatched status all fail denial assertion",
+  "moduleCompatibility": {
+    "esm": "all 6 tests pass with original isolated fixture",
+    "commonjs": "all 6 tests pass with bundled starter copy and documented MCP dependency",
+    "conversionPerformed": false,
+    "commonjsAction": "Existing action-stage verifier PASS: rejects unauthorized/missing/closed/malformed/empty requests, raises exact synthetic row medium to high, preserves other rows and idempotent repeat"
+  }
+}
