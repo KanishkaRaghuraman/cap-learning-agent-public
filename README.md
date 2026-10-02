@@ -25,7 +25,7 @@ Open a coding agent, such as Claude Code or Codex, and sign in. Your agent needs
 In your agent's chat, type:
 
 ```text
-Read AGENTS.md and start the CAP learning journey.
+Start the CAP learning journey.
 ```
 
 The agent will guide you through the required tools and setup, then help you follow your chosen path. For manual configuration, see the [setup guide](course/docs/AGENT-SETUP.md).
@@ -37,12 +37,20 @@ The agent will guide you through the required tools and setup, then help you fol
 
 Use the example prompts as starting points or ask in your own words. The agent explains what changes and helps when you get stuck.
 
+## Pause the course
+
+When you want to stop, tell your agent:
+
+```text
+Pause the CAP learning journey and save my progress.
+```
+
 ## Continue later
 
 Open the same folder and tell your agent:
 
 ```text
-Read AGENTS.md and resume my existing course.
+Resume the CAP learning journey.
 ```
 
 ## License
