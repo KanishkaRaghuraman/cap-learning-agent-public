@@ -24,7 +24,7 @@ Ask the course agent for this activity; adapt the example to what you want to ex
 
 ### Internal implementation recipe — not a learner prompt
 
-Create the course's incident domain and service in IncidentManagement, following the canonical model and service contract in lesson 3. Include incidents, owned conversation messages and synthetic local business partners; use UUID keys, managed timestamps, validated urgency/status enums, draft-enabled incidents and read-only partners. Keep the imported external contract separate. Compile for my runtime and verify the new model through CAP MCP. Do not create sample data or UI yet.
+Create the course's incident domain and service in IncidentManagement, following the canonical model and service contract in lesson 3. Include incidents, owned conversation messages and synthetic local business partners; use UUID keys, managed timestamps, validated urgency/status enums, draft-enabled incidents and read-only partners. Keep the imported external contract separate. Compile for my runtime and verify the new model through CAP MCP or the official source/compiled-model fallback in CAP-SKILLS.md. Do not create sample data or UI yet.
 
 Apply shared grounding, ownership and evidence safeguards in course/BUILDER.md.
 
@@ -34,7 +34,7 @@ Implement the bounded learner request in this course chat. No reportback or copi
 
 ## Step 3.2 — Internal implementation contract
 
-Before creation, inspect whether local domain files exist; preserve existing work. Ground aspects, composition backlinks, projections, draft and enum validation through live CAP documentation. Do not demand a successful local `search_model` before the first model exists. Immediately after creation, run it against the actual app and confirm all entities/service/navigation. If it fails then, inspect the real compilation/scope error and fix that cause before completion.
+Before creation, inspect whether local domain files exist; preserve existing work. Ground aspects, composition backlinks, projections, draft and enum validation through live CAP documentation. Do not demand a successful local `search_model` before the first model exists. Immediately after creation, search the actual app model, or inspect sources and cds compile output under CAP-SKILLS.md if model MCP is unavailable, and confirm all entities/service/navigation. Diagnose actual compilation/scope errors before completion; do not mark native MCP setup complete from the fallback.
 
 Retain namespace `incident.mgmt`, service `IncidentsService`, file paths `db/schema.cds` and `srv/incidents-service.cds`: later fixtures and staged extensions depend on these explicit course names. The following is a **internal reference**, not code the learner must type. Verify compatibility before applying; formatting may vary but the contract must not drift.
 

@@ -24,7 +24,7 @@ Ask the course agent for this activity; adapt the example to what you want to ex
 
 ### Internal implementation recipe — not a learner prompt
 
-Create IncidentManagement as a CAP Node.js project using the explicit Node.js scaffold. Preserve any existing project. Inspect package.json and ensure the SQLite development adapter is actually installed and compatible, not merely declared. Start the empty development watcher and record its actual result. Do not add the incident model or a sample app yet.
+Read the installed cap-developer Node.js reference and use its current ESM guidance for a fresh app. Preserve an existing app's module system; never convert the prepared CommonJS starter. Create IncidentManagement as a CAP Node.js project using the explicit Node.js scaffold. Preserve any existing project. Inspect package.json and ensure the SQLite development adapter is actually installed and compatible, not merely declared. Start the empty development watcher and record its actual result. Do not add the incident model or a sample app yet.
 
 Apply shared grounding, ownership and evidence safeguards in course/BUILDER.md.
 

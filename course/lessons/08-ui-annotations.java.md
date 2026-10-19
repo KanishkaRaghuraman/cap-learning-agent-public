@@ -38,7 +38,7 @@ Implement the bounded learner request in this course chat. No reportback or copi
 
 ## Step 8.2 — Internal implementation reference
 
-Use CAP model/documentation MCP for the actual service field and handler APIs, and Fiori documentation MCP for criticality syntax/values. Do not narrate unrelated search results to the learner or fabricate a CAP citation for a Fiori source. Add `virtual criticality : Integer` to the existing incident service projection without losing fields or draft annotations. Confirm it appears in service metadata and is not a persisted column. Preserve lesson-5 handlers.
+Use CAP model/documentation MCP or the CAP-SKILLS.md official fallback for the actual service field and handler APIs, and Fiori documentation MCP for criticality syntax/values. Do not narrate unrelated search results to the learner or fabricate a CAP citation for a Fiori source. Add `virtual criticality : Integer` to the existing incident service projection without losing fields or draft annotations. Confirm it appears in service metadata and is not a persisted column. Preserve lesson-5 handlers.
 
 The following is the existing course's **internal reference**, not a manual typing exercise. Verify imports, generated types and API compatibility against the installed runtime before applying. Reuse actual bindings and avoid duplicate registration on resume.
 

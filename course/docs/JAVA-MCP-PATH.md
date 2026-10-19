@@ -26,7 +26,7 @@ Ask for the new connection; the example can be adapted.
 
 ### Implementation (internal)
 
-Consult live CAP documentation and the actual model through development MCP. Follow `course/extensions/java/README.md`, adding only the read-only stage. Verify the projection of ID, title, status, urgency and businessPartnerName and actual enum values. Preserve the original Fiori service, handlers and learner edits. Check current compatible package guidance rather than assuming a historical pin is current; do not downgrade compatible installed versions. Keep local mock authorization and `@readonly`; no action stage, partner/message/import exposure or data mutation.
+Consult current official CAP documentation and the actual model through development MCP or the CAP-SKILLS.md fallback. Follow `course/extensions/java/README.md`, adding only the read-only stage. Verify the projection of ID, title, status, urgency and businessPartnerName and actual enum values. Preserve the original Fiori service, handlers and learner edits. Check current compatible package guidance rather than assuming a historical pin is current; do not downgrade compatible installed versions. Keep local mock authorization and `@readonly`; no action stage, partner/message/import exposure or data mutation.
 
 Explain the actual changed files and endpoint after implementing: which service was added, which incident fields and business-partner name it exposes, and that the original UI service remains. Do not describe an unobserved result as verified.
 
@@ -79,7 +79,7 @@ Ask for that capability, explaining that adding it does not change any incident 
 
 ### Implementation (internal)
 
-Use live CAP documentation/model MCP and the `course/extensions/java/11-action/srv/` recipe. Preserve the read-only entity and existing app service. Implement `raiseUrgency(incident: UUID)` restricted to IncidentManager, delegated through the original service. Missing incidents, closed incidents and outstanding drafts are rejected; already-high open incidents without a draft are unchanged. Inspect real Java generated types/build results rather than guessing or editing generated code.
+Use live CAP documentation/model MCP or the CAP-SKILLS.md official fallback, and the `course/extensions/java/11-action/srv/` recipe. Preserve the read-only entity and existing app service. Implement `raiseUrgency(incident: UUID)` restricted to IncidentManager, delegated through the original service. Missing incidents, closed incidents and outstanding drafts are rejected; already-high open incidents without a draft are unchanged. Inspect real Java generated types/build results rather than guessing or editing generated code.
 
 Explain actual files changed and the action's rules concisely. Do not invoke an action yet. Check whether the running development process reloads the changed source first. If a restart is necessary, explain the observed reason, warn about in-memory sample-data reset and ask the learner to restart their terminal; never kill or restart their server automatically.
 

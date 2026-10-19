@@ -18,7 +18,7 @@ git clone https://github.com/KanishkaRaghuraman/cap-learning-agent-public.git
 
 Open the **entire course folder** in your preferred code editor, such as VS Code or Cursor.
 
-Open a coding agent, such as Claude Code or Codex, and sign in. Your agent needs access to the project files, terminal and MCP tools.
+Open a coding agent, such as Claude Code or Codex, and sign in. Your agent needs access to the project files, terminal and MCP tools. Lesson 0 installs the [official CAP skills](course/docs/CAP-SKILLS.md) for your selected coding agent in this workspace and verifies that cap-developer guidance is loaded.
 
 ### 3. Start to vibe with CAP
 

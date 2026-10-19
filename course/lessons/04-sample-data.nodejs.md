@@ -24,7 +24,7 @@ Ask the course agent for this activity; adapt the example to what you want to ex
 
 ### Internal implementation recipe — not a learner prompt
 
-Create synthetic tutorial data in IncidentManagement/test/data/ for the actual incident model: at least 5 incidents covering all urgency/status values, at least 10 related messages and at least 3 fictional business partners. Use UUID keys/references and separate readable partner identifiers. Validate all CSV headers, values and references automatically. Preserve existing learner data; do not seed the imported external API or invent real customer data. Keep these as development fixtures; report static checks separately from the runtime loading checks in lesson 6.
+Create synthetic tutorial data in IncidentManagement/test/data/ for the actual incident model: at least 5 incidents covering all urgency/status values, at least 10 related messages and at least 3 fictional business partners. Read the installed cap-developer sample-data reference. Use its current CLI generator to produce new keys and matching foreign-key relationships first; retain those generated identifiers and references while adding synthetic readable values. Do not invent keys or reconstruct foreign keys by hand; retain separate readable partner identifiers. Preserve existing valid keys and records; never rewrite starter fixtures. Inspect current command options and do not overwrite existing CSVs. Any global dependency installation still requires its specific machine-level choice. Validate all CSV headers, values and references automatically. Preserve existing learner data; do not seed the imported external API or invent real customer data. Keep these as development fixtures; report static checks separately from the runtime loading checks in lesson 6.
 
 Apply shared grounding, ownership and evidence safeguards in course/BUILDER.md.
 
@@ -34,7 +34,7 @@ Implement the bounded learner request in this course chat. No reportback or copi
 
 ## Step 4.2 — Internal implementation and checks
 
-Use `search_model` for actual entity fields and live documentation for CSV naming/loading in this runtime. Create `test/data/incident.mgmt-Incidents.csv`, `incident.mgmt-ConversationMessages.csv` and `incident.mgmt-BusinessPartners.csv` with headers derived from the model. Include `high`, `medium`, `low` and `new_`, `assigned`, `closed`; include an open lower-urgency incident for the later action exercise. The partner key is UUID `ID`; incidents reference that key, not `businessPartnerId`.
+Use CAP MCP `search_model`, or inspect/compile the effective model under CAP-SKILLS.md, for actual entity fields and current official documentation for CSV naming/loading in this runtime. Create `test/data/incident.mgmt-Incidents.csv`, `incident.mgmt-ConversationMessages.csv` and `incident.mgmt-BusinessPartners.csv` with headers derived from the model. Include `high`, `medium`, `low` and `new_`, `assigned`, `closed`; include an open lower-urgency incident for the later action exercise. The partner key is UUID `ID`; incidents reference that key, not `businessPartnerId`.
 
 Parse all files: consistent header/row widths, valid unique UUID keys, valid enum values and no orphaned message/partner references. Check for conflicting duplicate seed sources. Do not replace existing data without an actual replacement decision. These are synthetic samples, not production data.
 

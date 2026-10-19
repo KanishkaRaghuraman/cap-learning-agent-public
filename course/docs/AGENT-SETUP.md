@@ -13,12 +13,12 @@ Open the course root—the folder containing `AGENTS.md`, `course/lessons/` and 
 - **Claude Code:** CLAUDE.md imports AGENTS.md; it is not a separate course engine. [Instruction loading](https://code.claude.com/docs/en/memory)
 - **Other agents/editors:** explicitly ask the agent to read AGENTS.md. Confirm workspace, terminal and MCP support before proceeding. Automatic compatibility is not assumed.
 
-Use one course chat under AGENTS.md. Build a CAP app has lessons0–12 and chooses Java/Node.js after the introduction; Explore MCP and agents has lessons0–3 and installs the Node.js starter after prerequisites using SHORT-STARTER.md. Explain each learner-authored activity with **For example:** and a concise adaptable prompt; routine operational instructions need no copied prompt. Native checks remain required. Final12 is hands-on application MCP in both runtimes, without an additional API key; never convert runtime silently. Optional Node.js Fiori embedding requires learner choice and reuses the already verified model connection; no separate API key is required when that connection works.
+Use one course chat under AGENTS.md. Build a CAP app has lessons0–12 and chooses Java/Node.js after the introduction; Explore MCP and agents has lessons0–3 and installs the Node.js starter after prerequisites using SHORT-STARTER.md. Explain each learner-authored activity with **For example:** and a concise adaptable prompt; routine operational instructions need no copied prompt. Native checks remain required. The final required activity uses the Node.js browser assistant with verified compatible model access, or Java editor application MCP; never convert runtime silently. Optional Node.js Fiori embedding requires learner choice and reuses the already verified model connection; no separate API key is required when that connection works.
 
 Ask the agent to start after workspace/account setup.
 
 **For example:**
-> Read AGENTS.md and start the CAP learning journey.
+> Start the CAP learning journey.
 
 If VS Code opens the folder in Restricted Mode, review the course files and trust only this course folder to enable terminals and coding extensions. Confirm that the actual agent is signed in before starting; installing an extension does not provide model access.
 
@@ -29,6 +29,10 @@ Both tracks need Node.js/npm for CAP development tooling and the MCP servers. Us
 Full lesson0 and the short starter task use the same setup requirements: check versions and latest stable compatible releases first, then perform agreed routine workspace setup. Short setup precedes bundled-starter installation, never a hidden lesson replay. It offers the exact system/global changes and their scope when needed. Existing supported versions can be retained. It does not overwrite existing configuration or silently change global packages. The CLI and Fiori generator may be global npm installations; model credentials remain client-managed; the MCP configuration below is project-scoped. `npx` may download packages to the npm cache on first use.
 
 Candidate commands and versions are listed in [TOOL-VERSIONS.md](TOOL-VERSIONS.md). A registry version is not a statement that every course/client combination has passed testing.
+
+## Official CAP skills
+
+Both runtime setup lessons and Explore lesson 0 follow [CAP-SKILLS.md](CAP-SKILLS.md). Install/reuse the current official workspace-local skill set for the actual coding agent, then confirm that agent read cap-developer and the relevant task reference. Installation and activation require separate evidence. Skills do not configure MCP.
 
 ## 3. Configure the development MCP servers
 

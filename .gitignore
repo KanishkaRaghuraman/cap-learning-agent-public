@@ -60,3 +60,10 @@ memory-bank/migration-incomplete.json
 # Downloaded SAP API contracts stay local
 *.edmx
 **/srv/external/
+
+# Local CAP skill installs and Skills CLI state
+/.agents/skills/
+/.claude/skills/
+/.cursor/skills/
+/.github/skills/
+/skills-lock.json

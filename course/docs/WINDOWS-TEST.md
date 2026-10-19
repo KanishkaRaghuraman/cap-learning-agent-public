@@ -26,9 +26,9 @@ The script applies a hash-checked workaround to the pinned UI5 MCP0.3.1 installe
 Open the cloned folder in your Windows coding client, enable the configured MCP servers and start one course chat. Ask it to begin.
 
 **For example:**
-> Read AGENTS.md and start the CAP learning journey.
+> Start the CAP learning journey.
 
-Expect a CAP introduction and choice1/full or2/short. Full then asks Java/Node.js; Explore announces Node.js and immediately begins prerequisite checks and starter setup. Check real native CAP/Fiori/UI5 responses after any client reload. Both paths remain in this same chat. Required final12 is native application MCP practice in both runtimes; no additional API key. Only optional Node.js Fiori embedding needs a supported key and explicit choice.
+Expect a CAP introduction and choice1/full or2/short. Full then asks Java/Node.js; Explore announces Node.js and immediately begins prerequisite checks and starter setup. Check real native CAP/Fiori/UI5 responses after any client reload. Both paths remain in this same chat. Required final12 uses Node.js browser assistant practice with verified compatible model access, or Java editor application MCP. Optional Node.js Fiori embedding requires explicit choice and reuses verified model access.
 
 ## Known boundaries
 

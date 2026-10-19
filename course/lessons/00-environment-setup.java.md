@@ -27,13 +27,15 @@ Use current official setup documentation and authoritative package metadata to r
 
 ## Step 0.2 — Install and connect
 
+Follow `course/docs/CAP-SKILLS.md` to plan, install/reuse and verify the current official CAP skill set for the actual coding agent, in project scope. Confirm the active agent read cap-developer SKILL.md and setup/task reference; file installation alone leaves activation pending. Keep the selected runtime and course scope.
+
 ### [BUILD PROMPT]
 
 Perform the agreed missing-tool installations/updates using current official routes. Keep application dependencies workspace-local. The CDS CLI is a command-line prerequisite in both routes: follow https://cap.cloud.sap/docs/tools/cds-cli and install a stable compatible @sap/cds-dk globally with npm install -g @sap/cds-dk after the learner agrees to its machine-level scope. Reuse an existing compatible CLI. A project-local dependency alone does not satisfy this prerequisite. Before any global installation or user-level configuration change, explain its scope and obtain a specific learner choice. Record previous versions and recovery scope; a global install affects other projects. Do not bypass permission or package-script protections. Recheck actual executable versions afterward; resolve PATH/restart needs. The learner does not need to copy terminal commands or paste their output.
 
 Configure the selected coding client's workspace MCP connections using `course/docs/AGENT-SETUP.md`, after reconciling its examples with current stable package metadata and client schemas. Preserve other servers and credentials. Check generator discovery under the same npm prefix as Fiori MCP; an arbitrary local package is not proof the generator is discoverable. Inspect the UI5 server's current validator support and any documented local patch against its actual version; do not apply a historical patch blindly. Do not change the learner's machine-global MCP configuration without an explicit choice.
 
-If MCP is not installed yet, official installation documentation/package metadata can establish the connection. This bootstrap exception does not authorize application implementation without the required live development MCP. Ask the learner only for secure sign-in or a client reload the agent cannot perform; explain exactly what that user-only action enables.
+If MCP is not installed yet, official installation documentation/package metadata can establish the connection. CAP implementation evidence may use the official documentation/model fallback in course/docs/CAP-SKILLS.md; this never marks native MCP setup complete or replaces Fiori/UI5/application MCP requirements. Ask the learner only for secure sign-in or a client reload the agent cannot perform; explain exactly what that user-only action enables.
 
 ## Step 0.3 — Verify and summarize
 

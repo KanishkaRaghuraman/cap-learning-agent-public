@@ -34,7 +34,7 @@ Implement the bounded learner request in this course chat. No reportback or copi
 
 ## Step 5.2 — Internal implementation contract
 
-Use actual-model MCP evidence to find the service/entity, draft state and stored enum values. Preserve existing handlers and module style; no guessed generated Java types or duplicate handlers. Ground the selected runtime's before/on/after phases and query/error APIs through live documentation. Before validation runs before handling, after enriches the response; “after” is not a transaction-commit notification.
+Use actual-model MCP evidence or the CAP-SKILLS.md inspected-source/compiled-model fallback to find the service/entity, draft state and stored enum values. Preserve existing handlers and module style; no guessed generated Java types or duplicate handlers. Ground the selected runtime's before/on/after phases and query/error APIs through live documentation. Before validation runs before handling, after enriches the response; “after” is not a transaction-commit notification.
 
 The urgent rule is a literal substring exercise: “not urgent” matches too. It is not a language classifier. Read stored status rather than trust omitted/new request fields. Validate the active entity so draft activation cannot bypass the closed rule. This lesson covers single-incident changes, not production authorization, bulk writes, concurrent-writer isolation, deletions or complete child-message immutability.
 

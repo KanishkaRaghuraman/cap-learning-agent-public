@@ -8,7 +8,7 @@ This is one bounded target application, not ten lessons to execute. Maintainers 
 
 ## Domain and service contract
 
-Use IncidentManagement/db/schema.cds and IncidentManagement/srv/incidents-service.cds with these exact names/types/relationships; verify current syntax through CAP development MCP.
+Use IncidentManagement/db/schema.cds and IncidentManagement/srv/incidents-service.cds with these exact names/types/relationships; verify current syntax through CAP development MCP or the CAP-SKILLS.md official fallback.
 
 ```cds
 namespace incident.mgmt;

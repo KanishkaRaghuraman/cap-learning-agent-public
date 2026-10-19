@@ -13,7 +13,7 @@ Ask for a read-only connection. The learner can change the wording.
 **For example:**
 > Add an MCP service for reading incident titles, business-partner names, status and urgency. Keep the existing app working.
 
-Consult the actual model and current CAP guidance through development MCP. Apply the Node read-stage recipe in course/extensions/node/README.md. Expose only the linked partner’s display name; keep contact details, messages and arbitrary writes out; preserve the original UI service. Check service compilation, authorization and a scoped read. MCP is the app's tool interface; its URL is not a chat page. Do not require configuring the editor's application MCP client to start the browser journey; that is offered after the final lesson.
+Consult the actual model and current CAP guidance through development MCP or the official CAP-SKILLS.md fallback. Apply the Node read-stage recipe in course/extensions/node/README.md. Expose only the linked partner’s display name; keep contact details, messages and arbitrary writes out; preserve the original UI service. Check service compilation, authorization and a scoped read. MCP is the app's tool interface; its URL is not a chat page. Do not require configuring the editor's application MCP client to start the browser journey; that is offered after the final lesson.
 
 ## 2 — Add the CAP assistant and open its preview
 
